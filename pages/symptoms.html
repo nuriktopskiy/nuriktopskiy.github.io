@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<meta name="description" content="Информационный сайт по коронавирусу" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/navbar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/sidenav.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/symptoms.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/iconbar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/Footer.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/slideshow.css"/>
+		<title>Симптомы коронавируса</title>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1>Всё о коронавирусе</h1>
+			</header>
+			<main>
+				<div class="topnav" id="myTopnav">
+					<span id="openNav" onclick="openNav()">☰</span>
+					<a href="../index.html" class="activeTopnav">Карта коронавируса</a>
+					<div class="topnav-right">
+						<a href="../pages/loginform.html" id="alogin">Вход</a>
+						<a href="../pages/regform.html" id="areg">Регистрация</a>
+					</div>
+				</div>
+
+				<div class="icon-bar">
+		  			<a href="https://vk.com/nurik_1337" target="_blank" class="vk"><i class="fa fa-vk"></i></a> 
+		  			<a href="https://www.instagram.com/nurik.topskiy/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a> 
+		 			<a href="https://github.com/nuriktopskiy" target="_blank" class="github"><i class="fa fa-github"></i></a>
+		 			<a href="https://api.whatsapp.com/send?phone=79006221612" target="_blank" class="whatsapp"><i class="fa fa-whatsapp"></i></a> 
+				</div>
+
+				<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+					<a href="../index.html">Карта коронавируса</a>
+					<a href="../pages/statistics-real.html">Живая статистика</a>
+					<a href="../pages/statistics.html">Статистика</a>
+					<a href="#" style="text-decoration: underline;">Симптомы</a>
+					<a href="../pages/about.html" style="white-space: nowrap;">О коронавирусе</a>
+					<a href="../pages/news.html">Новости</a>
+					<a href="#contacts" onclick="closeNav()">Контакты</a>
+				</div>
+				<script src="../js/sidenav.js"></script>
+				<div class="content">
+
+					<!-- Slideshow container -->
+						<div class="slideshow-container">
+
+						  <!-- Full-width images with number and caption text -->
+						  <div class="mySlides fade">
+						    <div class="numbertext">1 / 3</div>
+						    <img alt="coronavirus" src="../image/1.jfif">
+						    <div class="text"></div>
+						  </div>
+
+						  <div class="mySlides fade">
+						    <div class="numbertext">2 / 3</div>
+						    <img alt="coronavirus" src="../image/2.jpg">
+						    <div class="text"></div>
+						  </div>
+
+						  <div class="mySlides fade">
+						    <div class="numbertext">3 / 3</div>
+						    <img alt="coronavirus" src="../image/3.jpg">
+						    <div class="text"></div>
+						  </div>
+
+						  <!-- Next and previous buttons -->
+						  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+						</div>
+						<br>
+
+						<!-- The dots/circles -->
+						<div style="text-align:center">
+						  <span class="dot" onclick="currentSlide(1)"></span>
+						  <span class="dot" onclick="currentSlide(2)"></span>
+						  <span class="dot" onclick="currentSlide(3)"></span>
+						</div>
+						<script src="../js/showSlides.js"></script>
+					<br>
+					<h1>Симптомы коронавируса</h1>
+					<p>Инкубационный период коронавируса Covid-19 может продолжаться более двух недель. Более продолжительные сроки инкубационного периода могут быть характерны при передаче вируса от животных.</p>
+					<p>Симптомы коронавируса Covid-19 схожи с симптомами пневмонии или тяжёлого острого респираторного синдрома:</p>
+					<ul class="symptoms">
+						<li>
+							Потеря сознания (в результате прогрессирующего разрушения лёгочных тканей),
+						</li>
+						<li>
+							Сухой, непродуктивный кашель,
+						</li>
+						<li>
+							Лихорадка и повышение температуры (38 °С или выше, озноб),
+						</li>
+						<li>
+							Затруднения при дыхании,
+						</li>
+						<li>
+							Боли в области груди,
+						</li>
+						<li>
+							Головная боль,
+						</li>
+						<li>
+							Боль в мышцах,
+						</li>
+						<li>
+							Общее недомогание.
+						</li>
+					</ul>
+					<br>
+					<h1>Легкая форма коронавируса COVID-19</h1>
+					<p>Небольшая температура, слабая головная боль, повышенная утомляемость, болезненные ощущения в горле, покашливание, ломота в мышцах, легкие признаки простуды, бледность, озноб. Редко насморк.</p>
+					<br>
+					<h1>Как не спутать симптомы коронавируса COVID-19 с ОРВИ</h1>
+					<p>При ОРВИ и простуде, в отличие о COVID-19, кашель мокрый, а не сухой, и всегда есть заложенность носа и насморк. Из схожих симптомов — небольшое повышение температуры и головная боль от легкой до умеренной.</p>
+					<br>
+					<h1>Как не спутать симптомы коронавируса COVID-19 с гриппом</h1>
+					<p>Роспотребнадзор, основываясь на информации ВОЗ, сообщает на своем сайте, что симптомы COVID-19 и грипп похожи: "оба вызывают респираторное заболевание с широким спектром вариантов — от бессимптомного или легкого до тяжелого состояния и смерти". Но при гриппе не бывает одышки или других проблем с дыханием, а температура почти всегда высокая, в отличие от COVID-19.</p>
+					<br>
+					<h1>Необычные симптомы коронавируса COVID-19 в Германии</h1>
+					<p>Немецкий вирусолог Хендрик Стрик, наблюдавший практически всех заболевших COVID-19 в Германии, в интервью газете Frankfurter Allgemeine Zeitung поделился личным опытом. По мнению специалиста, у типичного пациента коронавируса COVID-19 только легкие симптомы. Характерны сухой раздражающий кашель и небольшая лихорадка, у 30 процентов инфицированных отмечалась диарея.</p>
+					<p>Встречались и весьма необычные признаки: примерно две трети заболевших говорили о нарушении обоняния и вкуса. В течение нескольких дней они отмечали странные ощущения. Это говорит о том, что у пациентов из Германии вирус SARS-CoV-2 проникал не только в легкие, но и в желудочно-кишечный тракт.</p>
+				</div>
+			</main>
+			<footer id="myFooter">
+				<a id="contacts"></a>
+				<div class="footer-container">
+					<p>Если вы заметили недочеты по сайту или хотите связаться с нами, напишите на Email: <a href="mailto:neznayka.2014@yandex.ru" style="color: red;">neznayka.2014@yandex.ru</a></p>
+				</div>
+				<div class="icon-bar-mobile">
+		  			<a href="https://vk.com/nurik_1337" target="_blank" class="vk"><i class="fa fa-vk"></i></a> 
+		  			<a href="https://www.instagram.com/nurik.topskiy/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a> 
+		 			<a href="https://github.com/nuriktopskiy" target="_blank" class="github"><i class="fa fa-github"></i></a>
+		 			<a href="https://api.whatsapp.com/send?phone=79006221612" target="_blank" class="whatsapp"><i class="fa fa-whatsapp"></i></a> 
+				</div>
+			</footer>
+		</div> <!--Конец wrapper (обёртка)-->
+	</body>
+</html>

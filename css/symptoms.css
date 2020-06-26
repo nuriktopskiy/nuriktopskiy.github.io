@@ -1,0 +1,54 @@
+.content p{
+	text-align: left;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.content{
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.content h1{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.content li{
+	list-style-type: none; /* Прячем исходные маркеры */
+	font-size: 20px;
+	padding-top: 7px;
+}
+
+.content li:before{
+	color: red; /* Цвет маркера */
+    content: "►"; /* Сам маркер */
+    padding-right: 10px; /* Расстояние от маркера до текста */
+}
+
+
+@media screen and (max-width: 1024px) {
+	.content{
+		width: 90%;
+		margin-top: 20px;
+	}
+
+	ul{
+		padding-left: 10px;
+	}
+
+	.content li{
+		font-size: 17px;
+	}
+
+	.content p{
+		font-size: 18px;
+	}
+
+	.content h1{
+		font-size: 22px;
+	}
+}

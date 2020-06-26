@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<meta name="description" content="Информационный сайт по коронавирусу" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+		<link rel="stylesheet" type="text/css" href="css/sidenav.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iconbar.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animation.css"/>
+		<title>Карта коронавируса</title>
+	</head>
+	<body>
+		<div id="page-preloader">
+			<div class="loading-wrap">
+    			<div class="triangle1"></div>
+    			<div class="triangle2"></div>
+    			<div class="triangle3"></div>
+			</div>
+			<p>Секундочку</p>
+		</div>
+		<script src="js/preloader.js"></script>
+		<div class="topnav" id="myTopnav" style="position: fixed;">
+			<span id="openNav" onclick="openNav()">☰</span>
+			<a href="#главная" class="activeTopnav">Карта коронавируса</a>
+			<div class="topnav-right">
+				<a href="pages/loginform.html" id="alogin">Вход</a>
+				<a href="pages/regform.html" id="areg">Регистрация</a>
+			</div>
+		</div>
+
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="pages/statistics-real.html">Живая статистика</a>
+			<a href="pages/statistics.html">Статистика</a>
+			<a href="pages/symptoms.html">Симптомы</a>
+			<a href="pages/about.html" style="white-space: nowrap;">О коронавирусе</a>
+			<a href="pages/news.html">Новости</a>
+			<a href="#contacts" onclick="closeNav()">Контакты</a>
+		</div>
+		<script src="js/sidenav.js"></script>
+		<iframe src="https://coronavirus-monitor.ru/map" style="min-width: 100%;min-height: 100%;border: 0"></iframe>
+		<footer id="myFooter">
+			<a id="contacts"></a>
+			<div class="footer-container">
+				<p>Если вы заметили недочеты по сайту или хотите связаться с нами, напишите на Email: <a href="mailto:neznayka.2014@yandex.ru" style="color: red;">neznayka.2014@yandex.ru</a></p>
+			</div>
+			<div class="icon-bar-mobile">
+		  			<a href="https://vk.com/nurik_1337" target="_blank" class="vk"><i class="fa fa-vk"></i></a> 
+		  			<a href="https://www.instagram.com/nurik.topskiy/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a> 
+		 			<a href="https://github.com/nuriktopskiy" target="_blank" class="github"><i class="fa fa-github"></i></a>
+		 			<a href="https://api.whatsapp.com/send?phone=79006221612" target="_blank" class="whatsapp"><i class="fa fa-whatsapp"></i></a> 
+				</div>
+		</footer>
+	</body>
+</html>

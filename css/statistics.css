@@ -1,0 +1,33 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+	margin-bottom: 5px;
+}
+
+main{
+	margin-bottom: 30px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+.table p{
+	text-align: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+	table{
+		min-width: 100%;
+	}
+}

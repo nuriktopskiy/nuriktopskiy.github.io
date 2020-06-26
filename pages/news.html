@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<meta name="description" content="Информационный сайт по коронавирусу" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/navbar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/sidenav.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/iconbar.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/Footer.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/news.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/animation.css"/>
+		<title>Новости о коронавирусе</title>
+	</head>
+	<body>
+		<header>
+				<h1>Всё о коронавирусе</h1>
+		</header>
+		<div id="page-preloader">
+			<div class="loading-wrap">
+    			<div class="triangle1"></div>
+    			<div class="triangle2"></div>
+    			<div class="triangle3"></div>
+			</div>
+			<p>Секундочку</p>
+		</div>
+		<script src="../js/preloader.js"></script>
+		<div class="wrapper">
+			<main>
+				<div class="topnav" id="myTopnav">
+					<span id="openNav" onclick="openNav()">☰</span>
+					<a href="../index.html" class="activeTopnav">Карта коронавируса</a>
+					<div class="topnav-right">
+						<a href="../pages/loginform.html" id="alogin">Вход</a>
+						<a href="../pages/regform.html" id="areg">Регистрация</a>
+					</div>
+				</div>
+
+				<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+					<a href="../index.html">Карта коронавируса</a>
+					<a href="../pages/statistics-real.html">Живая статистика</a>
+					<a href="../pages/statistics.html">Статистика</a>
+					<a href="../pages/symptoms.html">Симптомы</a>
+					<a href="../pages/about.html" style="white-space: nowrap;">О коронавирусе</a>
+					<a href="#" style="text-decoration: underline;">Новости</a>
+					<a href="#contacts" onclick="closeNav()">Контакты</a>
+				</div>
+				<script src="../js/sidenav.js"></script>
+
+				<div class="icon-bar">
+		  			<a href="https://vk.com/nurik_1337" target="_blank" class="vk"><i class="fa fa-vk"></i></a> 
+		  			<a href="https://www.instagram.com/nurik.topskiy/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a> 
+		 			<a href="https://github.com/nuriktopskiy" target="_blank" class="github"><i class="fa fa-github"></i></a>
+		 			<a href="https://api.whatsapp.com/send?phone=79006221612" target="_blank" class="whatsapp"><i class="fa fa-whatsapp"></i></a> 
+				</div>
+				<p class="last_news_p">ПОСЛЕДНИЕ НОВОСТИ О КОРОНАВИРУСЕ</p>
+				<div class="news">
+					<script src="https://news.yandex.ru/ru/koronavirus.utf8.js"></script>
+					<script>
+						(function(w,rubric){
+								var data=w[rubric];
+								if(!data||!data.length){return;
+							}
+							function formatDate(ts){
+								var d=new Date(ts*1000);
+								return d.getHours()+':'+('0'+d.getMinutes()).substr(-2);
+							}
+							var html='<div class="ya-news__title"><a href="https://news.yandex.ru/" target="_blank"></a></div>';
+							for(var i=0;i<data.length;i++){
+								var item=data[i];html+='<div class="block"><div><span class="ya-news__titles"><a href="'+item.url+'" target="_blank">'+item.title+'</a></span></div><div class="ya-news__description">'+item.descr+'</div></div>';
+							}
+							html+='<div class="ya-news__all"><a href="https://news.yandex.ru/" target="_blank">Все новости на '+formatDate(w.update_time_t)+'</a></div>';document.write(html);
+						}
+						(window, 'm_koronavirus'));
+					</script>
+				</div>
+			</main>
+			<footer id="myFooter">
+				<a id="contacts"></a>
+				<div class="footer-container">
+					<p>Если вы заметили недочеты по сайту или хотите связаться с нами, напишите на Email: <a href="mailto:neznayka.2014@yandex.ru" style="color: red;">neznayka.2014@yandex.ru</a></p>
+				</div>
+				<div class="icon-bar-mobile">
+		  			<a href="https://vk.com/nurik_1337" target="_blank" class="vk"><i class="fa fa-vk"></i></a> 
+		  			<a href="https://www.instagram.com/nurik.topskiy/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a> 
+		 			<a href="https://github.com/nuriktopskiy" target="_blank" class="github"><i class="fa fa-github"></i></a>
+		 			<a href="https://api.whatsapp.com/send?phone=79006221612" target="_blank" class="whatsapp"><i class="fa fa-whatsapp"></i></a> 
+				</div>
+			</footer>
+		</div> <!--Конец wrapper (обёртка)-->
+	</body>
+</html>
