@@ -36,3 +36,11 @@
         transform: rotate(360deg);
     }
 }
+
+.App-description{
+    margin: 0 auto;
+    width: 60%;
+}
+.App-description p:not(:last-child){
+    margin-bottom: 10px;
+}
